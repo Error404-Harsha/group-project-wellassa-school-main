@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title> Wellassa School | HOME</title>
+    <link rel="shortcut icon" type="images" href="images/logo.jpg">
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <style>
+
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap');
+   
+*{   
+    margin:0%;
+    padding:0%;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    -webkit-transition: all .2s linear;
+    transition: all .2s linear;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+
+/* navar start*/
+.navbar {
+    background-color: #224bcf;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.navbar-logo {
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    }
+
+.navbar-menu {
+    display: none;
+}
+
+.navbar-menu.active {
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar-menu-item {
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+}
+
+.navbar-toggle-line {
+    width: 24px;
+    height: 2px;
+    background-color: #fff;
+}
+/*navbar end*/
+
+.map iframe{
+ width: 100%;
+ height: 320px;
+}
+
+.home h3{
+    text-align: center;
+    font-size: 50px;
+    color: red;
+    margin-top: 10px;
+}
+
+.home img{
+    margin-left: 250px;
+}
+
+.home p{
+    text-align: center;
+    font-size: 30px;
+    color: #18161b;
+}
+
+/*Start footer*/
+.footer {
+    background: #8f98b5;
+}
+
+.footer .credit {
+    text-align: center;
+    margin-top: 2rem;
+    padding: 1rem;
+    padding-top: 2.5rem;
+    font-size: 2rem;
+    color: #666;
+    border-top: 0.1rem solid rgba(0, 0, 0, 0.1);
+}
+
+.footer .social-m h3{
+  font-size: 30px;
+  color: rgb(64, 41, 41);
+}
+/*End footer*/
+
+    </style>
+
+</head>
+
+<body>
+
+    <!-- header section starts  -->
+
+    <header class="header">
+
+        <div class="navbar" id="Navbar">
+            <a href="#" class="navbar-logo"><i class="fa fa-graduation-cap"></i> Wellassa School</a>
+            <div class="navbar-toggle" onclick="toggleMenu()">
+              <div class="navbar-toggle-line"></div>
+              <div class="navbar-toggle-line"></div>
+              <div class="navbar-toggle-line"></div>
+            </div>
+            <div class="navbar-menu" id="navbarMenu">
+              <a href="#" class="navbar-menu-item"><i class="fa fa-graduation-cap"></i> Home interface page</a>
+              <a href="#" class="navbar-menu-item"><i class="fa fa-info-circle"></i> Details page about the school</a>
+              <a href="#" class="navbar-menu-item"><i class="fa fa-bookmark"></i> Upcoming school information</a>
+              <a href="#" class="navbar-menu-item"><i class="fa fa-registered"></i> registration page</a>
+              <a href="#" class="navbar-menu-item"><i class="fa fa-balance-scale"></i> Event and student ability</a>
+              <a href="#" class="navbar-menu-item"><i class="fa fa-asterisk"></i> Student details page</a>
+              <a href="#" class="navbar-menu-item"><i class="fa fa-question-circle"></i> Help & Contact</a>
+            </div>
+        </div>
+    
+    </header>
+
+    <div class="home">
+        <h3>We are different from others</h3>
+        <img src="images/home-img.png" alt="home image">
+        
+        <p>Creating an intellectual, social and nurturing learning community and further socializing each student's emotional development as well as their relationships</p><br>
+            
+    </div>
+
+
+       
+
+        <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d38601.712952096386!2d81.0850488977272!3d6.9675400932273295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae4618a1a9fec37%3A0x1dd900702229654b!2z4LaM4LeAIOC3gOC3meC2veC3iuC2veC3g-C3iuC3gyDgt4Dgt5Lgt4Hgt4rgt4Ag4LeA4LeS4Lav4LeK4La64LeP4La94La6!5e0!3m2!1ssi!2slk!4v1689924619284!5m2!1ssi!2slk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+
+ <section class="footer">
+
+        <div class="social-m">
+            <h3>Follow US</h3><br>
+                <a href="#"> <i class="fab fa-facebook-f"></i> facebook </a>
+                <a href="#"> <i class="fab fa-twitter"></i> twitter </a>
+                <a href="#"> <i class="fab fa-linkedin"></i> linkedin </a>
+                <a href="#"> <i class="fab fa-instagram"></i> instagram </a>
+                <a href="#"> <i class="fab fa-youtube"></i> youtube </a>
+                <a href="#"> <i class="fab fa-github"></i> github </a>
+        </div>
+
+        <div class="credit">created by <span> Wellassa School </span></div>
+
+    </section>
+
+    <script>
+        function toggleMenu() {
+          const menu = document.getElementById('navbarMenu');
+          menu.classList.toggle('active');
+        }
+      </script>
+
+</body>
+
+</html>
